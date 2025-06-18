@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  overflow: auto;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  width: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left {
+  background-color: #000000;
+  position: relative;
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #cfd1d6;
+  color: #f82d29;
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.left .code,
+.code pre {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #191919;
+}
+
+main .right {
+  background-color: #3b3a3a;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  overflow: auto;
+}
